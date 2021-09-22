@@ -1,0 +1,13 @@
+export interface Movie {imdbID: string;
+    Title: string;
+    Genre: string;
+    imdbRating: string;
+    Year: string;
+    Runtime: string;
+    Poster: string;
+    Language: string;
+    BoxOffice: string;
+    Plot: string;
+    Actors: string;
+    Director: string;
+  };

@@ -1,0 +1,151 @@
+/* body{
+    background-color: inherit;
+}
+
+.show{
+    align-items: center;
+    text-align: center;
+     background-color: rgb(145, 145, 145); 
+    border-radius: 0px;
+} 
+
+*/
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0px;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/*
+table thead {
+    justify-self: center;
+    width:90%;
+}
+
+table tbody {
+    justify-self: center;
+    width:90%;
+}
+
+table tbody tr {
+    justify-self: center;
+    width: 90%;
+}
+table thead tr {
+    justify-self: center;
+    width: 90%;
+}
+
+col {
+    display: table-column
+}
+
+colgroup {
+    display: table-column-group
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-radius: 0px;
+
+}
+
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+    
+}
+
+th {
+    font-weight: bold;
+    background-color: rgb(107, 107, 107);
+}
+
+caption {
+    display: table-caption;
+    text-align: -webkit-center;
+    
+} */
+.dropDown {
+    background-color: inherit;
+    color: inherit;
+    width: 100%;
+}
+.container .Plot{
+    border: 2px;
+    top: 8px;
+    background-color: black;
+    color: inherit;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-size:large;
+}
+.container .Actors{
+    top: 8px;
+    background-color: black;
+    color: inherit;
+    width: 100%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size:small;
+}
+.container .Director{
+    top: 8px;
+    background-color: black;
+    color: inherit;
+    width: 100%; 
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size:small;
+}
+.container td{
+    background-color: black;
+    width: 90%;
+}
+.container {
+    padding:0%;
+    background-color: black;
+    column-span: 100%;
+    color: inherit;
+    justify-self: center;
+    height: 0px;
+    width: 90%;
+    transition: all 2s ease;
+}
+.transform-active {
+    visibility: visible;
+    height: auto;
+    width: 100%;
+}
+.container td img{
+    float:left; 
+    padding-right: 10px;
+    background-color: inherit;
+}
+.showMovie{
+    visibility: hidden;
+    height: 0px;
+    width: 100%;
+}
+.transform {
+    transition: all 2s ease;
+}
+tr:nth-child(even) {background:rgb(107, 107, 107)}
+tr:nth-child(odd) {background: gray}
+
+td,th{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size:large;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+th{
+    background:rgb(107, 107, 107)
+}

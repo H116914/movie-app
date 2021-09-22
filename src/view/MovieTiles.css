@@ -1,0 +1,100 @@
+body{
+    background-color: inherit;
+    align-items: center;
+}
+
+.tile {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    row-gap: 20px;
+    padding-top: 35px;
+  }
+.tiles {
+    cursor: pointer;
+    background-color: transparent;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.tile img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+.tile-container{
+    background-color: inherit;
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.tile-container .score{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    background-color: rgb(145, 145, 145);
+    color: black;
+    width: 35px;
+    height: auto;
+    border-radius: 50px 15px 50px 15px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size:large;
+}
+.tile-container:hover{
+    transform: scale(1.1);
+    
+}
+.tile-container:hover .overlay{
+    opacity: 1;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    height: auto;
+    font-family: "Times New Roman", Times, serif;
+    font-size:large;
+    transition: 0.3s;
+    text-align: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: ivory;
+}
+.tile .flip{
+    transform: rotateY(180deg);
+}
+.flip .overlay{
+    display: none;
+}
+.flip .score{
+    display: none;
+}
+
+.tile-container--front,
+.tile-container--back {
+      position: relative;
+      width: 95%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+.tile-container--back {
+    position: absolute;
+    bottom: 0%;
+    background-color: inherit;
+    color: inherit;
+    padding: 20px;
+    transform: rotateY(180deg);
+    font-family: "Times New Roman", Times, serif;
+    font-size:small;
+    text-align: center;
+  }
+.title{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size:large;
+    white-space: nowrap;
+}

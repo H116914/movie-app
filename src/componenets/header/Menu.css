@@ -1,0 +1,30 @@
+img:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    clear: both;
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    padding: 5px;
+   }
+   
+ul {
+    z-index: 1;
+    background: rgb(90, 90, 90);
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    border-radius: 15px 15px 50px 15px;
+    width: 150px;
+}
+ul li img{
+    z-index: 2;
+    position: relative;
+    background-color: white;
+}
